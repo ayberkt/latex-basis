@@ -1,0 +1,22 @@
+\usepackage{amsthm,amsmath,amssymb,amsfonts}
+\usepackage{mathrsfs}
+\usepackage{tikz-cd}
+
+\newcommand{\st}{\ |\ }
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\powerset}{\mathscr{P}}
+\newcommand{\rarr}{\rightarrow}
+\newcommand{\frk}[1]{\mathfrak{#1}}
+
+% Term rewriting modulo axioms.
+\newcommand{\rewritemodstep}{\rightarrow_{R/B}}
+\newcommand{\rewritemod}[1]{\rightarrow^{#1}_{R/B}}
+\newcommand{\term}[1]{#1 \in \bigcup T_{\Sigma (X)}}
+\newcommand{\joinable}[2]{#1 \downarrow_{R/B} #2}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
