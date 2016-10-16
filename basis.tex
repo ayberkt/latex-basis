@@ -2,6 +2,7 @@
 \usepackage{mathtools}
 \usepackage{mathrsfs}
 \usepackage{tikz-cd}
+\usepackage{todonotes}
 
 \newcommand{\st}{\ |\ }
 
@@ -11,6 +12,12 @@
 \newcommand{\powerset}{\mathscr{P}}
 \newcommand{\rarr}{\rightarrow}
 \newcommand{\frk}[1]{\mathfrak{#1}}
+\newcommand{\scr}[1]{\mathscr{#1}}
+
+\newcommand{\CatName}[1]{{\normalfont\textbf{#1}}}
+\newcommand{\CatSet}{\CatName{Sets}}
+
+\newcommand{\deno}[1]{\llbracket #1 \rrbracket}
 
 % Term rewriting modulo axioms.
 \newcommand{\rewritemodstep}{\rightarrow_{R/B}}
@@ -21,3 +28,4 @@
 \newtheorem{proposition}{Proposition}
 \newtheorem{lemma}{Lemma}
 \newtheorem{definition}{Definition}
+\newtheorem*{notation}{Notation}
