@@ -1,0 +1,14 @@
+\usepackage{tikz-qtree}
+
+\tikzset{every tree node/.style={align=center,anchor=north}}
+
+\newcommand{\treedeno}[1]{
+    \left \llbracket
+    \tikz[baseline={([yshift=+-.5ex]current bounding box.center)}]{
+      \mbox{#1}
+    }
+    \right \rrbracket
+}
+% \newcommand{\parens}[1]{{\color{Purple} ( }#0{\color{Purple} ) }}
+\newcommand{\treeparens}[1]{ \left ( #1 \right ) }
+\newcommand{\lam}[3]{\lambda #1 \in \frk{D}_{#2}.\ #3}
