@@ -5,6 +5,7 @@
 \usepackage{tikz-cd}
 \usepackage{todonotes}
 \usepackage{stmaryrd}
+\usepackage{enumerate}
 
 \newcommand{\st}{\ |\ }
 
@@ -31,11 +32,17 @@
 \newcommand{\rewritemod}[1]{\rightarrow^{#1}_{R/B}}
 \newcommand{\term}[1]{#1 \in \bigcup T_{\Sigma (X)}}
 \newcommand{\joinable}[2]{#1 \downarrow_{R/B} #2}
+\newcommand{\TermAlg}[1]{{\mathcal{T}_{#1}}}
 
 \newcommand{\tuple}[1]{\langle #1 \rangle}
 
-\newtheorem{proposition}{Proposition}
-\newtheorem{lemma}{Lemma}
-\newtheorem{definition}{Definition}
+\theoremstyle{definition}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{theorem}{Theorem}[section]
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
 \newtheorem*{notation}{Notation}
 \newtheorem{example}{Example}
